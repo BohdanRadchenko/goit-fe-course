@@ -43,6 +43,10 @@ div {
     text-decoration: none;
 }
 
+.menu a:hover {
+    color: #25b4f5;  
+}
+
 .lifestyle {
     margin-top: 100px;
     display: flex;
