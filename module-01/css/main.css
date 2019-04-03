@@ -44,10 +44,12 @@ div {
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .menu a:hover {
     color: #25b4f5;  
+    transform: scale(1.2);
 }
 
 h2 {
@@ -55,7 +57,7 @@ h2 {
 }
 
 h3 {
-    padding: 21px 0;
+   padding: 21px 0;
    font-family: 'ubuntu';
    text-transform: uppercase;
 }

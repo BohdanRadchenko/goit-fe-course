@@ -1,0 +1,76 @@
+*{
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'playfair display';
+    font-family: serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #626262;
+}
+
+div {
+    box-sizing: border-box;
+}
+.container {
+    width: 903px;
+    margin: 0 auto;
+}
+
+.headline {
+    margin-top: 75px;    
+}
+
+.menu {
+    padding: 0 164px;
+ }
+
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style: none; 
+    float: right;
+}
+
+.menu a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    color: #25b4f5;  
+    transform: scale(1.2);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+   padding: 21px 0;
+   font-family: 'ubuntu';
+   text-transform: uppercase;
+}
+
+#lifestyle {
+    margin-top: 100px;
+    padding-bottom: 100px;
+ }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    /*float: left;*/
+    width: 421px;
+    height: 480px;   
+}
