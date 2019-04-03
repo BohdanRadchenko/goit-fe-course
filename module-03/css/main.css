@@ -1,13 +1,14 @@
-*{
+/**{
     border: 1px solid red;
+}*/
+*{
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family:'playfair display';
     font-family: serif;
-    padding: 0;
-    margin: 0;
     font-size: 14px;
     color: #626262;
 }
@@ -16,7 +17,7 @@ div {
     box-sizing: border-box;
 }
 .container {
-    width: 903px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -44,33 +45,71 @@ div {
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .menu a:hover {
-    color: #25b4f5;  
-    transform: scale(1.2);
-}
-
-h2 {
-    font-size: 30px;
+    color: #25b4f5;
+    border-top: 1px solid #25b4f5;
+    border-bottom: 1px solid #25b4f5;
 }
 
 h3 {
-   padding: 21px 0;
-   font-family: 'ubuntu';
-   text-transform: uppercase;
+    margin: 18px 0;
+    font-family: 'Ubuntu';
+    opacity: 0.4;
+    text-transform: uppercase;
 }
 
-#lifestyle {
-    margin-top: 100px;
-    padding-bottom: 100px;
- }
+h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
 
-.content {
+.lifestyle {
+    margin-top: 100px;
+}
+
+.wrap   {
     display: flex;
-    flex-direction: column;
-    /*float: left;*/
-    width: 421px;
-    height: 480px;   
+    justify-content: space-between;
+}
+
+.content    {
+    width: 422px;
+}
+
+.photodiary, .life_bottom {
+    margin-top: 135px;
+}
+
+footer {
+    padding: 73px;
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    color: #626262;
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid #000;
+    width: 164px;
+    padding: 17px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: radial-gradient(at top, #FEFFFF, #A7CECC);
+}
+
+img {
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
