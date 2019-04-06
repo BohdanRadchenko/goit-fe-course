@@ -71,13 +71,11 @@ img {
 /*main*/
 
 .cont {
-    /*text-align: center;*/    /*для центровки кнопки*/ 
     padding-bottom: 70px;
     font-size: 0;
 }
 
 .content {
-    /*text-align: left;*/  /*для центровки кнопки*/  
     margin-bottom: 138px;
     display: inline-block; 
     width: 420px;
