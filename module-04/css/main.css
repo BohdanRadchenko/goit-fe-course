@@ -1,0 +1,115 @@
+* {
+  outline: 1px solid red;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /*300 700*/
+  font-family: "Roboto", sans-serif; /*900*/
+  font-family: "Montserrat", sans-serif; /*400*/
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/*headr*/
+
+.headline {
+  margin-top: 40px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 400;
+  float: left;
+  color: #010101;
+}
+
+.logo_m {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.site-menu {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.site-menu li {
+  margin-right: 38px;
+  font-size: 14px;
+  float: left;
+  list-style: none;
+}
+
+.site-menu li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-menu a {
+  font-weight: 700;
+  color: #010101;
+}
+
+.site-menu a:hover {
+  color: #1abc9c;
+}
+
+/*main*/
+
+.products {
+  margin-top: 100px;
+}
+
+.products h2 {
+    margin: 0;
+}
+img {
+}
+
+.box {
+    width: 254px;
+    float: left;
+    margin-right: 30px;
+}
+
+.box:nth-child(4n) {
+    margin-right: 0;
+}
+.box p{
+    margin: 0;
+    float: left;
+}
+
+.subtitle {
+    width: 200px;
+    background: #010101;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 3px 0;
+}
+
+.price {
+    width: 54px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    background: #8c8c8c;
+    padding: 3px 0;
+}
