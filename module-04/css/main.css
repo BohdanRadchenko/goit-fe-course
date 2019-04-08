@@ -2,12 +2,21 @@
   outline: 1px solid red;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif; /*300 700*/
   font-family: "Roboto", sans-serif; /*900*/
   font-family: "Montserrat", sans-serif; /*400*/
   box-sizing: border-box;
   margin: 0;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -24,7 +33,6 @@ body {
 /*headr*/
 
 .headline {
-  margin-top: 40px;
 }
 
 .logo {
@@ -62,6 +70,7 @@ a {
 }
 
 .site-menu a {
+  display: block;
   font-weight: 700;
   color: #010101;
 }
@@ -73,7 +82,6 @@ a {
 /*main*/
 
 .products {
-  margin-top: 100px;
 }
 
 .products h2 {
