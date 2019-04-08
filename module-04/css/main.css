@@ -85,12 +85,12 @@ img {
 .box {
     width: 254px;
     float: left;
-    margin-right: 30px;
 }
 
-.box:nth-child(4n) {
-    margin-right: 0;
+.box:not(:nth-child(4n)) {
+  margin-right: 30px;
 }
+
 .box p{
     margin: 0;
     float: left;
