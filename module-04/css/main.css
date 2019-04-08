@@ -38,8 +38,9 @@ div {
 .logo {
   font-size: 30px;
   font-weight: 400;
-  float: left;
   color: #010101;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .logo_m {
@@ -96,11 +97,11 @@ div {
 }
 
 .name {
-  width: 70%;
+  /*width: 70%;*/
 }
 
 .price {
-  width: 30%;
+  /*width: 30%;*/
 }
 
 /*news*/
