@@ -37,6 +37,7 @@ div {
 }
 
 .logo {
+  display: block;
   font-size: 30px;
   font-weight: 400;
   color: #010101;
@@ -79,7 +80,6 @@ div {
 }
 
 nav {
-  margin-top: 66px;
   margin-bottom: 100px;
 }
 
