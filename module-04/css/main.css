@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 body {
@@ -162,4 +162,26 @@ h3 {
 
 .news_item:not(:nth-last-child(1)) {
   margin-right: 30px;
+}
+
+h3::after {
+  content:'';
+  display: block;
+  width: 136px;
+  height: 4px;
+  background: #1abc9c;
+}
+
+
+.button {
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  width: 160px;
+  background: #4ec6ab;
+  color: #fff;
+  border-radius: 4px;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
 }
