@@ -1,5 +1,5 @@
 * {
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
 body {
@@ -120,20 +120,31 @@ h2::after {
   font-weight: 900;
   padding: 6px 0;
   color: #fff;
-  float: left;
+  padding-left: 6px;
+  /*float: left;*/
 }
 
-.name {
-  padding-left: 3px;  
+.name_box {
+  background: #000;
+  float: left;
+  width: 80%;
+}
+
+.price_box {
+  background: #8c8c8c;
+  float: left;
+  width: 20%;
+}
+
+/*.name {
   width: 80%;
   background: #000;
-}
+}*/
 
-.price {
-  padding-left: 3px;
+/*.price {
   width: 20%;
   background: #8c8c8c;
-}
+}*/
 
 p {
   margin: 0;
@@ -156,6 +167,14 @@ p {
 
 .accessory_item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
+}
+
+.accessory_item:hover .name_box {
+  background: #1abc9c;
+}
+
+.accessory_item:hover .price_box {
+  background: #7fd9c7;
 }
 
 /*.accessory_item:nth-last-child(4) {
