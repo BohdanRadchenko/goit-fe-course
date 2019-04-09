@@ -86,13 +86,21 @@ div {
 /*main*/
 /*product*/
 
-.prod_title{
+h2  {
+  font-size: 48px;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   display: block;
 }
 
-.prod_title::after {
+/*.prod_title{
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}*/
+
+h2::after {
   content:'';
   display: block;
   width: 164px;
@@ -100,6 +108,15 @@ div {
   background: #1abc9c;
   margin: 0 auto;
 }
+
+/*.prod_title::after {
+  content:'';
+  display: block;
+  width: 164px;
+  height: 7px;
+  background: #1abc9c;
+  margin: 0 auto;
+}*/
 
 .accessory {
   list-style: none;
