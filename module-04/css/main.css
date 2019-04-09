@@ -30,6 +30,12 @@ div {
   margin: 0 auto;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*headr*/
 
 .headline {
@@ -107,10 +113,14 @@ div {
 /*news*/
 
 .news {
-  width: 350px;
   list-style: none;
 }
 
 .news_item {
+  width: 350px;
   float: left;
+}
+
+.news_item:not(:nth-last-child(1)) {
+  margin-right: 30px;
 }
