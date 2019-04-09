@@ -230,6 +230,8 @@ h3::after {
 
 .news_item p {
   margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .button {
