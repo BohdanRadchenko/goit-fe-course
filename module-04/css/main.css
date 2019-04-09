@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 body {
@@ -124,11 +124,13 @@ h2::after {
 }
 
 .name {
+  padding-left: 3px;  
   width: 80%;
   background: #000;
 }
 
 .price {
+  padding-left: 3px;
   width: 20%;
   background: #8c8c8c;
 }
