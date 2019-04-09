@@ -105,6 +105,7 @@ h2::after {
   height: 7px;
   background: #1abc9c;
   margin: 0 auto;
+  margin-top: 32px;
 }
 
 p {
@@ -176,6 +177,7 @@ h3::after {
   width: 136px;
   height: 4px;
   background: #1abc9c;
+  margin-top: 14px;
 }
 
 .news_item p {
