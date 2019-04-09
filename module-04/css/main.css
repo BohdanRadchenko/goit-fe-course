@@ -120,8 +120,7 @@ h2::after {
   font-weight: 900;
   padding: 6px 0;
   color: #fff;
-  padding-left: 6px;
-  /*float: left;*/
+  padding-left: 10px;
 }
 
 .name_box {
