@@ -188,6 +188,10 @@ p {
 
 /*news*/
 
+.latest_news {
+  padding-bottom: 40px;
+}
+
 .latest_news h2 {
   margin-bottom: 94px;
 }
