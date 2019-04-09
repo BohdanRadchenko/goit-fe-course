@@ -1,5 +1,5 @@
 * {
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
 body {
@@ -106,6 +106,28 @@ h2::after {
   background: #1abc9c;
   margin: 0 auto;
   margin-top: 32px;
+}
+
+.accessory_item {
+  width: 255px;
+}
+
+.accessory_item p {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 6px 0;
+  color: #fff;
+  float: left;
+}
+
+.name {
+  width: 80%;
+  background: #000;
+}
+
+.price {
+  width: 20%;
+  background: #8c8c8c;
 }
 
 p {
