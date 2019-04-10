@@ -1,5 +1,5 @@
 * {
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
 }
 
 html {
@@ -22,15 +22,13 @@ body {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+  /*position: absolute;*/
 
-  width: 1px;
+ /* width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
-
-  white-space: nowrap;
+  padding: 0;*/  
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -280,7 +278,7 @@ div {
     background-repeat: no-repeat;
     background-position: center;
  }
- 
+
  .cart {
      background-position: 3.66% center;
  }
