@@ -250,7 +250,7 @@ div {
     width: 164px;
     height: 48px;
     border: 1px solid #fff;
-    background: #323232;
+    background-color: #323232;
     color: #fff;
 } 
 
@@ -260,20 +260,21 @@ div {
  } 
 
  .like {
-     background: url(../img/ico/ico-like.png);
+     background-image: url(../img/ico/ico-like.png);
  }
 
  .mix {
-    background: url(../img/ico/ico-mix.png);
+    background-image: url(../img/ico/ico-mix.png);
 }
 
 .cloak  {
-    background: url(../img/ico/ico-cloak.png);
+    background-image: url(../img/ico/ico-cloak.png);
 }
 
 .cart {
-    background: url(../img/ico/ico-cart.png);
+    background-image: url(../img/ico/ico-cart.png);
 }
+
 
 .soc_btn {
     background-repeat: no-repeat;
