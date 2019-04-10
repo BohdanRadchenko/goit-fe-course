@@ -16,8 +16,6 @@ body {
     font-family: 'Open Sans', sans-serif; /*700 */
     font-family: 'Roboto', sans-serif; /*300 900 */
     font-family: 'Montserrat', sans-serif; /*400*/
-    /*margin: 0;
-    padding: 0;*/
 }
 
 /* visually-hidden helper */
@@ -118,11 +116,14 @@ div {
 
 /*collection*/
 
+.main_page {
+
+}
+
 .collection {
     padding-top: 100px;
     background-color: #e9f0fd;
     padding-bottom: 98px;
-
 }
 
 .collection h2 {
@@ -282,6 +283,22 @@ div {
      background-position: 3.66% center;
  }
 
+
+ /*footer*/
+
  .foot {
      background: #323232;
+ }
+
+ .foot p {
+     text-align: center;
+     margin: 0;
+     padding: 30px 0;
+     color: #fefefe;
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+ .lead {
+     color: #1abc9c;
  }
