@@ -244,6 +244,7 @@ div {
     background: none;
     text-transform: uppercase;
     transition: all 0.5s ease;
+    cursor: pointer;
 } 
 
 .cart {
