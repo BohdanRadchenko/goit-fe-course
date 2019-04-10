@@ -20,6 +20,25 @@ body {
     padding: 0;*/
 }
 
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -193,16 +212,16 @@ div {
     top: 10px;
     left: 10px;
 }
+
 .card_item:hover .soc_box {
    opacity: 1;
 }
-
 .soc_menu {
     list-style: none;
     position: absolute;
     top: 78px;
     left: 34px;
-    padding: 0;
+    padding: 0;   
 }
 
 .soc_item {
