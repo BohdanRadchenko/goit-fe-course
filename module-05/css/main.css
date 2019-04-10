@@ -123,26 +123,34 @@ div {
 
 .card_item {
     float: left;
+    position: relative;
 }
 
 .card_item:not(:last-child) {
     margin-right: 30px;
 }
 
+.card_wrap {
+    position: relative;
+}
 .name_box,
 .price_box {
     padding-left: 8px;
-    float: left;
+    position: absolute;
 }
 
 .name_box {
     width: 80%;
     background: #323232;
+    left: 0;
+    bottom: 0;
 }
 
 .price_box {
     background: #8c8c8c;
     width: 20%;
+    right: 0;
+    bottom: 0;
 }
 
 .card_item p {
@@ -150,7 +158,7 @@ div {
     color: #fff;
     font-size: 18px;
     font-weight: 900;
-    padding: 6px 0;
+    padding: 9px 0;
     text-transform: uppercase;
 }
 
@@ -165,4 +173,23 @@ div {
 .card_item:hover .price_box {
     background: #7fd9c7;
 }
+
+.soc_box {
+    display: none;
+    width: 234px;
+    height: 262px;
+    background: rgba(114, 114, 114, 0.3);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.soc_menu {
+    list-style: none;
+}
+
+.card_item:hover .soc_box {
+    display: block;
+}
+
 
