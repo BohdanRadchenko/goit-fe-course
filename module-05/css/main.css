@@ -2,6 +2,16 @@
     /*outline: 1px solid red;*/
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; 
+}
+
 body {
     font-family: 'Open Sans', sans-serif; /*700 */
     font-family: 'Roboto', sans-serif; /*300 900 */
@@ -175,21 +185,54 @@ div {
 }
 
 .soc_box {
-    display: none;
+    opacity: 0;
     width: 234px;
     height: 262px;
-    background: rgba(114, 114, 114, 0.3);
+    background: rgba(115, 115, 115, 0.549);
     position: absolute;
     top: 10px;
     left: 10px;
 }
+.card_item:hover .soc_box {
+   opacity: 1;
+}
 
 .soc_menu {
     list-style: none;
+    position: absolute;
+    top: 78px;
+    left: 34px;
+    padding: 0;
 }
 
-.card_item:hover .soc_box {
-    display: block;
+.soc_item {
+    float: left;
 }
 
+.soc_item:not(:last-child){
+    margin-right: 10px;
+}
 
+.soc_item:not(:last-child){
+    margin-bottom: 6px;
+}
+
+.soc_btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #fff;
+    background: none;
+} 
+
+.cart {
+    width: 164px;
+    height: 48px;
+    border: 1px solid #fff;
+    background: #323232;
+    color: #fff;
+} 
+
+.soc_btn:hover {
+    background: #1abc9c;
+    border: none;
+ } 
