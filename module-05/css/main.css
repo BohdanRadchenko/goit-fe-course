@@ -241,6 +241,7 @@ div {
     height: 48px;
     border: 1px solid #fff;
     background: none;
+    text-transform: uppercase;
 } 
 
 .cart {
@@ -255,3 +256,24 @@ div {
     background: #1abc9c;
     border: none;
  } 
+
+ .like {
+     background: url(../img/ico/ico-like.png);
+ }
+
+ .mix {
+    background: url(../img/ico/ico-mix.png);
+}
+
+.cloak  {
+    background: url(../img/ico/ico-cloak.png);
+}
+
+.cart {
+    background: url(../img/ico/ico-cart.png);
+}
+
+.soc_btn {
+    background-repeat: no-repeat;
+    background-position: center;
+ }
