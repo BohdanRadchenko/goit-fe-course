@@ -63,6 +63,7 @@ div {
 .headline {
     /*background-color: #f5f6f7;*/
     padding-top: 24px;
+    padding-bottom: 32px;
 }
 
 .logo {
@@ -131,6 +132,14 @@ div {
     background-color: rgba(78, 198, 171, 0.651);
     width: 104px;
     height: 104px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider_ctrl:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);  
 }
 
 .slider_ctrl_prev {
@@ -149,16 +158,42 @@ div {
     list-style: none;
 }
 
+.slider {
+    position: relative;
+}
+
+.desc {
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
 .slider_item {
 
 }
 
-.slider_item h2 {
+.slider_item img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider_item h2,
+.slider_item p {
     margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slider_item h2 {
+    font-size: 55px;
+    font-weight: 900;
 }
 
 .slider_item p  {
-    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 /*collection*/
@@ -304,9 +339,8 @@ div {
 
 .soc_btn:hover {
     background-color: #1abc9c;
-
     border: 1px solid #1abc9c;
-    /*border: none;*/   /*странно доргается содержимое кнопки add to cart*/ 
+    /*border: none;*/   /*странно дeргается содержимое кнопки add to cart*/ 
  } 
 
  .like {
