@@ -16,6 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif; /*700 */
     font-family: 'Roboto', sans-serif; /*300 900 */
     font-family: 'Montserrat', sans-serif; /*400*/
+    margin: 0;
 }
 
 /* visually-hidden helper */
@@ -254,6 +255,7 @@ div {
 
 .soc_btn:hover {
     background-color: #1abc9c;
+
     border: 1px solid #1abc9c;
     /*border: none;*/   /*странно доргается содержимое кнопки add to cart*/ 
  } 
