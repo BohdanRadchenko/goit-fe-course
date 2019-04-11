@@ -113,107 +113,92 @@ div {
 
 /*main*/
 
-/*slide*/
-
-.slide_container {
-    width: 1600px;;
-    margin: 0 auto;
-}
-
-.slide_section {
-    position: relative;
-}
+/*slider*/
 
 .slide_content {
-    display: block;
     position: relative;
-    top: 0;
-    left: 0;
     width: 1600px;
     height: 600px;
     margin: 0 auto;
-    /*background-color: #323232;*/
-    /*background-image: linear-gradient(#0B486B, #F56217);
-    z-index: 20;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.slider_ctrl {
-    position: absolute;
-    top: 50%;
-    border: none;
-    transform: translatey(-50%);
-    background-color: rgba(78, 198, 171, 0.651);
-    width: 104px;
-    height: 104px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    z-index: 10;
-    padding: 0;
-}
 
-.slider_ctrl:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);  
-}
-
-.slider_ctrl_prev {
-    left: 245px;
-    background-image: url('../img/ico/ico_left.png');
-}
-
-.slider_ctrl_next {
-    right: 245px;
-    background-image: url('../img/ico/ico_right.png');
-}
-
-.slider {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.box_ctrl {
     position: relative;
 }
 
-.desc {
+.slide_ctrl {
     position: absolute;
-    top: 220px;
-    left: 50%;
-    transform: translateX(-50%)
+    border: none;
+    width: 104px;
+    height: 104px;
+    background-color: #6db9a6;
+    opacity: 0.65;
+    top: 226px;   
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
 
-.slider {
+.slide_ctrl:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.slider_item {  
+
+.prev {
+    left: 0;
+    background-image: url(../img/ico/ico_left.png);
 }
 
-.slider_item img {
-    height: 600px;
+.next {
+    right: 0;
+    background-image: url(../img/ico/ico_right.png);
+}
+
+.slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slides_item {
+
+}
+
+.slides_image   {
     width: 100%;
+    height: 600px;
     object-fit: cover;
 }
 
-.slider_item h2,
-.slider_item p {
-    margin: 0;
+.slides_descr {
     text-transform: uppercase;
-    color: #fff;
+    position: absolute;
+    top: 208px;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
-.slider_item h2 {
+.slides_title,
+.slides_subtitle {
+    color: #fff;
+    margin: 0;
+}
+
+.slides_title {
     font-size: 55px;
     font-weight: 900;
 }
 
-.slider_item p  {
+.slides_subtitle {
     font-size: 24px;
     font-weight: 300;
 }
 
+
+
 /*collection*/
-
-.main_page {
-
-}
 
 .collection {
     padding-top: 100px;
