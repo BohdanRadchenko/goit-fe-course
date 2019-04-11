@@ -48,7 +48,7 @@ img {
   text-decoration: none;
 }
 
-.logo_m {
+.logo::first-letter {
   font-weight: 900;
   color: #1abc9c;
 }
