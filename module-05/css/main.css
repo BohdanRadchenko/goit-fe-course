@@ -76,7 +76,7 @@ div {
     color: #5d5a5a;
 }
 
-.logo_m {
+.logo::first-letter {
     font-weight: 900;
     color: #1abc9c;
 }
