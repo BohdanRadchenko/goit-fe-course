@@ -1,7 +1,3 @@
-* {
-    /*outline: 1px solid red;*/
-}
-
 html {
     box-sizing: border-box;
 }
@@ -86,6 +82,7 @@ img {
 }
 
 .logo {
+    display: block;
     font-size: 30px;
     font-weight: 700;
 }
@@ -94,6 +91,7 @@ img {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
+    transition: color 0.2s linear;
 }
 
 .menu_link:hover {
@@ -233,7 +231,7 @@ p {
 .team_item {
     position: relative;
     text-align: center;
-    width: 470px;
+    width: 380px;
 }
 
 .team_item h4 {
