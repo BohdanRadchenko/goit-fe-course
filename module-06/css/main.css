@@ -1,0 +1,129 @@
+* {
+    outline: 1px solid red;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; 
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;  
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+    /*font-family: 'Kaushan Script', cursive;*/ /*400*/
+    font-family: 'Roboto', sans-serif; /*400 300*/
+    font-family: 'Montserrat', sans-serif; /*400 700 */
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*header*/
+
+.headline {
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 26px;
+}
+
+.menu {
+    width: 490px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item {
+}
+
+.logo,
+.menu_link {
+    text-decoration: none;
+    color: #95e1d3;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu_link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu_link:hover {
+    color: #f38181;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #f38181;
+}
+
+/*main*/
+
+h2,
+h3,
+p {
+    margin: 0;
+    color: #333333;
+}
+
+.section_subtitle {
+    font-family: 'Kaushan Script', cursive; 400
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.section_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/*services*/
+
+.service_list {
+    margin: 0;
+}
