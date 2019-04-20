@@ -66,8 +66,8 @@ img {
 
 @keyframes menu_move {
     0% {
-        transform: translatex(300px);
-        opacity: 0;
+        display: none;
+        transform: translatex(114px);
     }
     100% {
         transform: translateX(0);
@@ -81,7 +81,9 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    animation: menu_move 1s linear;
+    opacity: 0;
+    animation: menu_move 1s linear 0.7s;
+    animation-fill-mode: both;
 }
 
 .menu_item:not(:last-child) {
