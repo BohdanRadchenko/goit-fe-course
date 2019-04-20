@@ -49,11 +49,11 @@ img {
     clear: both;
 }
 
+
 /*header*/
 
 .headline {
-    margin-bottom: 66px;
-
+    margin-bottom: 66px;    
 }
 
 .navigation {
@@ -63,12 +63,25 @@ img {
     padding-top: 26px;
 }
 
+
+@keyframes menu_move {
+    0% {
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
+    animation: menu_move 1s linear;
 }
 
 .menu_item:not(:last-child) {
@@ -85,6 +98,25 @@ img {
     display: block;
     font-size: 30px;
     font-weight: 700;
+    animation: logo_move 2s ease-in-out;
+}
+
+@keyframes logo_move  {
+    0% {
+        transform: translateY(-200px);
+    }    
+    70% {
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    90% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .menu_link {
@@ -101,6 +133,11 @@ img {
 }
 
 /*main*/
+
+.main_page {
+    display: flex;
+    flex-direction: column;
+}
 
 h2,
 h3,
@@ -206,6 +243,7 @@ p {
 
 .team {
     margin-bottom: 86px;
+    flex-grow: 1;
 }
 
 .team h2 {
@@ -252,6 +290,9 @@ p {
     height: 470px;
     background-color: #95e1d3;
     margin-bottom: 28px;
+}
+
+.photo_item {
 }
 
 .team_item:hover .photo_item {
@@ -319,7 +360,7 @@ p {
 
 /*footer*/
 
-.foot_page {
+.foot_page {    
     display: flex;
     justify-content: space-between;
     align-items: center;
