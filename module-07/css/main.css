@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/*fonts*/
+@font-face {
+  font-family: 'montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/montserrat-bold.woff);
+}
+
+@font-face {
+  font-family: 'Oleo-scrip';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/oleo-script-regular.woff);
+}
+
+@font-face {
+  font-family: 'pt-serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/pt-serif-regular-italic.woff);
+}
+
+@font-face {
+  font-family: 'roboto-slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto-slab-regular.woff);
+}
+
+body {
+  font-family: 'montserrat';
+  font-size: 14px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+
+/*header*/
+.headline {
+  margin-bottom: 124px;
+}
+
+.navigation {
+  padding-top: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+.site_logo {
+  color: #fed136;
+  font-size: 26px;
+  font-family: 'Oleo-scrip';
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu_item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu_item a{
+  text-transform: uppercase;
+  color: #222;
+}
+
+.menu_item:hover a {
+  color: #fed136;
+}
+
+
+/*services*/
+
+.services_section {
+  text-align: center;
+}
+
+.section_title,
+.section_subtitle {
+  margin: 0;
+  text-align: center;
+}
+
+.section_title {
+  font-family: 'montserrat';
+  font-size: 40px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.section_subtitle {
+  font-family: 'pt-serif';
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 48px;
+}
+
+.services_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_item {
+  width: 290px;
+  margin-bottom: 100px;
+}
+
+.services_item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.services_item::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 10px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon_basket::before {
+  background-image: url(../img/icon_none_border/Icon-Basket.png);
+}
+
+.icon_laptop::before {
+  background-image: url(../img/icon_none_border/Icon-Laptop.png);
+}
+
+.icon_locked::before {
+  background-image: url(../img/icon_none_border/Icon-Locked.png);
+}
+
+.services_title,
+.sevrvices_subtitle {
+  margin: 0;
+}
+
+.services_title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sevrvices_subtitle {
+  font-family: 'roboto-slab';  
+}
+
+/*contact us*/
+.contact_us {
+  padding-top: 100px;
+  padding-bottom: 114px;
+  background-color: #222222;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: url(../img/map_image.png);
+  background-repeat: no-repeat;
+  background-position: right 90px ; 
+}
+
+.contact_us .container {  
+  /*background-image: url(../img/map_image.png);
+  background-repeat: no-repeat;
+  background-position: top right;*/
+}
+
+.contact_form {
+}
+
+.form_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.form_inner { 
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+}
+
+.contact_form input {
+  font-family: 'montserrat';
+  font-size: 14px;
+  height: 52px;
+  padding-left: 20px;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+}
+
+input:placeholder-shown,
+textarea:placeholder-shown {
+  text-transform: uppercase;
+}
+
+
+.contact_form input:focus {
+  outline: 0;
+  border: 2px solid #757575;
+}
+
+
+.contact_form input:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.contact_form input:valid:not(:last-child) {
+  border-bottom: 3px solid green;
+}
+
+.contact_form input:invalid:not(:last-child) {
+  border-bottom: 3px solid red;
+}
+
+.contact_form textarea {
+  font-family: 'montserrat';
+  font-size: 14px;
+  width: 455px;
+  padding: 16px;
+  resize: none;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+}
+
+.contact_form textarea:focus {
+  outline: 0;
+  border: 2px solid #757575;
+}
+
+.send_button {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  background-color: #fed136;
+  border: 0;
+  border-radius: 4px;
+  padding: 22px 0;
+  font-family: 'montserrat';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
