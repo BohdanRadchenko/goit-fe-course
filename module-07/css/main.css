@@ -233,6 +233,7 @@ textarea:placeholder-shown {
 .contact_form input:focus {
   outline: 0;
   border: 2px solid #757575;
+  box-shadow: 0 0 20px 1px rgba(158, 158, 158, 0.5);
 }
 
 
@@ -241,11 +242,13 @@ textarea:placeholder-shown {
 }
 
 .contact_form input:valid:not(:last-child) {
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid rgba(0, 255, 0, 0.9);
+  box-shadow: 0 0 20px 1px rgb(0, 255, 0, 0.3);
 }
 
 .contact_form input:invalid:not(:last-child) {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.9);
+  box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.3);
 }
 
 .contact_form textarea {
@@ -261,6 +264,17 @@ textarea:placeholder-shown {
 .contact_form textarea:focus {
   outline: 0;
   border: 2px solid #757575;
+}
+
+.contact_form textarea:valid {
+  border-bottom: 3px solid rgba(0, 255, 0, 0.9);
+  box-shadow: 0 0 20px 1px rgba(0, 255, 0, 0.3);
+}
+
+.contact_form textarea:invalid {
+  border-bottom: 3px solid rgba(255, 0, 0, 0.9);
+  box-shadow: 0 0 20px 1px rgba(255, 0, 0, 0.3);
+
 }
 
 .send_button {
