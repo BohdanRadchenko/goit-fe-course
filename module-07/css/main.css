@@ -186,18 +186,18 @@ img {
 .contact_us {
   padding-top: 100px;
   padding-bottom: 114px;
-  background-color: #222222;
-  max-width: 1400px;
+  background-color: #222222; 
+  /*background-image: url(../img/map_image.png);
+  background-repeat: no-repeat;
+  background-position: right 90px ; */
+}
+
+.contact_us .container_map {  
+   max-width: 1400px;
   margin: 0 auto;
   background-image: url(../img/map_image.png);
   background-repeat: no-repeat;
-  background-position: right 90px ; 
-}
-
-.contact_us .container {  
-  /*background-image: url(../img/map_image.png);
-  background-repeat: no-repeat;
-  background-position: top right;*/
+  background-position: top right;
 }
 
 .contact_form {
