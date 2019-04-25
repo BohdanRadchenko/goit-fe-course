@@ -2,7 +2,7 @@
     /*outline: 1px solid red;*/
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 659px) {  
     .container {
         width: 320px;
     }
@@ -54,5 +54,55 @@
 
     .other_parthners {
         width: 280px;
+    }
+}
+
+@media (min-width: 660px) {
+    .headline {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .container {
+        width: 768px;        
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    .site_title {
+        margin-bottom: 40px;
+    }
+    
+    .site_subtitle {
+        margin-bottom: 34px;
+    }
+
+    .parthners {
+        padding-bottom: 40px;
+    }
+
+    .parthner {
+        width: 492px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .parthner_list {
+        width: 236px;
+    }
+
+    .parthner_list:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+    .parthner_list:not(:nth-last-child(-n +2)) {
+        margin-bottom: 60px;
     }
 }
