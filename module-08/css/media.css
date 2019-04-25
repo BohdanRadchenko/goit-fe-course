@@ -4,7 +4,7 @@
 
 @media (max-width: 659px) {  
     .container {
-        min-width: 320px;
+        width: 320px;
     }
 
     .headline {
@@ -37,7 +37,7 @@
     }
 
     /*section*/
-    .parthners {
+    .section_parthners {
         padding-top: 66px;
         padding-bottom: 56px;
     }
@@ -57,14 +57,10 @@
     }
 }
 
-@media (min-width: 660px) {
-    .headline {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    
+
+@media (min-width: 660px) and (max-width: 941px) {
     .container {
-        width: 768px;        
+        width: 748px;        
     }
 
     .navigation {
@@ -82,7 +78,7 @@
         margin-bottom: 34px;
     }
 
-    .parthners {
+    .section_parthners {
         padding-bottom: 40px;
     }
 
@@ -106,3 +102,44 @@
         margin-bottom: 60px;
     }
 }
+
+@media (min-width: 942px) {
+    .section_parthners {
+        padding-bottom: 72px;
+    }
+
+    .container {
+        width: 940px;        
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    .site_title {
+        margin-bottom: 40px;
+    }
+    
+    .site_subtitle {
+        margin-bottom: 38px;
+    }
+
+    .parthner {     
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parthner_list {
+        width: 220px;
+    }
+    .parthner_list:not(:nth-child(4n)) {
+       margin-right: 20px;
+    }
+    .other_parthners {
+        margin-top: 48px;
+    }
+}
+

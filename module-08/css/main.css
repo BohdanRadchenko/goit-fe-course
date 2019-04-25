@@ -27,7 +27,7 @@ body {
 /*header*/
 
 .headline {
-    margin: 0 auto;
+    min-width: 320px;
     padding-top: 50px;
     padding-bottom: 230px;
     font-weight: 700;
@@ -45,10 +45,6 @@ body {
     padding: 0;
 }
 
-.menu_item {
-
-}
-
 .menu_item:nth-child(1) {
     margin-right: 38px;
 }
@@ -59,7 +55,7 @@ body {
 
 .sign_up {
     text-align: center;
-    padding: 10px 0;
+    padding: 6px 0;
     border: 2px solid #fff;
     border-radius: 18px;
     width: 90px;
@@ -97,16 +93,18 @@ body {
 
 .find_button {
     display: block;
+    width: 226px;
     margin: 0 auto;
     color: #fff;
     background-color: #ff4e50;
     border: none;
     border-radius: 20px;
     padding: 16px 0;
+    cursor: pointer;
 }
 
 /*section*/
-.parthners {
+.section_parthners {
     padding-top: 74px;
 }
 
@@ -190,4 +188,5 @@ body {
     background-color: transparent;
     border: 2px solid #ff4e50;
     border-radius: 20px;
+    cursor: pointer;
 }
