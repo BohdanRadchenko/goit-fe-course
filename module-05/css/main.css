@@ -114,16 +114,18 @@ div {
 /*main*/
 
 /*slider*/
+
 .slide_content {
+    position: relative;
     width: 1600px;
+    height: 600px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.box_ctrl { 
+
+.box_ctrl {
     position: relative;
-    margin: 0 auto;
-    width: 1100px;
 }
 
 .slide_ctrl {
@@ -173,7 +175,7 @@ div {
 .slides_descr {
     text-transform: uppercase;
     position: absolute;
-    top: 218px;
+    top: 208px;
     left: 50%;
     transform: translatex(-50%);
 }
@@ -193,6 +195,8 @@ div {
     font-size: 24px;
     font-weight: 300;
 }
+
+
 
 /*collection*/
 
