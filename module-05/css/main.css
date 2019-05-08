@@ -333,6 +333,8 @@ div {
     border: 1px solid #fff;
     background-color: #323232;
     color: #fff;
+    text-align: right;
+    padding-right: 18px;
 } 
 
 .soc_btn:hover {
