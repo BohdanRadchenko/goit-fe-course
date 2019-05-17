@@ -53,12 +53,16 @@ body {
     font-size: 14px;
 }
 
-.sign_up {
+.menu_link {
     text-align: center;
     padding: 6px 0;
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     border-radius: 18px;
     width: 90px;
+}
+
+.menu_link:hover {
+    border: 2px solid #fff;
 }
 
 .site_logo {
