@@ -1,12 +1,14 @@
 /* specification    */
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing:inherit;
+    -webkit-box-sizing:inherit;
+            box-sizing:inherit;
 }
 
 img {
@@ -32,7 +34,9 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -51,6 +55,9 @@ body {
 /* header */
 .header {
     height: 996px;
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(252, 227, 138, 0.8)), to(rgb(243, 129, 129, 0.8))), url(../img/bg/bg_header.png);
+    background: -webkit-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header.png);
+    background: -o-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header.png);
     background: linear-gradient(to top right, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -59,19 +66,28 @@ body {
     padding-bottom: 228px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
     .header {
+        background: -webkit-gradient(linear, left bottom, right top, from(rgba(252, 227, 138, 0.8)), to(rgb(243, 129, 129, 0.8))), url(../img/bg/bg_header@2x.png);
+        background: -webkit-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header@2x.png);
+        background: -o-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header@2x.png);
         background: linear-gradient(to top right, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8)), url(../img/bg/bg_header@2x.png);
     }
 }
 
 .navigation {
     margin-bottom: 158px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -194,9 +210,14 @@ body {
 }
 
 .service__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -283,8 +304,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .team__item {
@@ -293,12 +318,16 @@ body {
 }
 
 .team__item:hover .photo_inner {
-    transform: translate(-20px,-20px);
+    -webkit-transform: translate(-20px,-20px);
+        -ms-transform: translate(-20px,-20px);
+            transform: translate(-20px,-20px);
 }
 
 .team__item:hover .social {
     opacity: 1;
-    transform: translate(-20px,-20px);
+    -webkit-transform: translate(-20px,-20px);
+        -ms-transform: translate(-20px,-20px);
+            transform: translate(-20px,-20px);
 }
 
 .photo_wrap {
@@ -311,6 +340,8 @@ body {
 
 .photo_inner {
     position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
@@ -321,7 +352,12 @@ body {
     left: 0;
     width: 380px;
     height: 470px;
+    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(252, 227, 138, 0.8)), to(rgb(243, 129, 129, 0.8)));
+    background-image: -webkit-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8));
+    background-image: -o-linear-gradient(bottom left, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8));
     background-image: linear-gradient(to top right, rgba(252, 227, 138, 0.8), rgb(243, 129, 129, 0.8));
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
     opacity: 0;
 }
@@ -330,8 +366,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -340,6 +380,8 @@ body {
     width: 56px;
     background-color: #fce38a;
     position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -359,11 +401,15 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     display: block;
     width: 32px;
     height: 32px;
     fill: #f38181;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -398,9 +444,15 @@ body {
 }
 
 .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .copy__text {
@@ -414,8 +466,12 @@ body {
 }
 
 .sub_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .user_email {
@@ -428,6 +484,18 @@ body {
 
 .user_email:focus {
     outline: 2px solid #d6d6d6;
+}
+
+.user_email::-webkit-input-placeholder {
+    color: #d6d6d6;
+}
+
+.user_email:-ms-input-placeholder {
+    color: #d6d6d6;
+}
+
+.user_email::-ms-input-placeholder {
+    color: #d6d6d6;
 }
 
 .user_email::placeholder {
