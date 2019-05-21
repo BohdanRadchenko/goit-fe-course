@@ -75,10 +75,10 @@
   }
 
   &__item {
+    position: relative;
     height: 56px;
     width: 56px;
     background-color: $color-gold;
-    position: relative;
     transition: all 0.2s ease-in-out;
   }
 
@@ -95,16 +95,21 @@
   }
 }
 
-.soc_icon {
+.social__link {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.soc_icon {
   width: 32px;
   height: 32px;
+  display: block;
   fill: $color-pink;
   transition: all 0.3s ease-in-out;
+
 }
 
 .team__text {

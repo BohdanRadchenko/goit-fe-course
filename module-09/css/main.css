@@ -26,9 +26,10 @@ body {
     padding-top: 46px;
     padding-bottom: 235px;
     background-color: #000;
-    background-image: url(../img/header_image.png);
+    background-image: url(../images/background-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .navigation {
@@ -53,6 +54,9 @@ body {
 }
 
 .logo {
+    display: block;
+    text-align: center;
+    text-align: center;
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -67,6 +71,7 @@ body {
 .find_button {
     color: #fff;
     font-weight: 700;
+    text-align: center;
 }
 
 .header__title {
@@ -180,7 +185,3 @@ body {
     font-weight: 700;
     font-size: 14px;
 }
-
-
-
-

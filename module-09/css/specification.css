@@ -1,0 +1,22 @@
+/* specification */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing:inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; /*300 400 */
+    font-family: 'Montserrat', sans-serif; /*400 700*/  
+}
