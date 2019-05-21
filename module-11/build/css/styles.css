@@ -513,6 +513,7 @@ body {
 }
 
 .menu__link {
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
