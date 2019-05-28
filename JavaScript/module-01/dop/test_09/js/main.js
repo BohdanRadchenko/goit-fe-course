@@ -23,10 +23,10 @@
 
 // const country = 'Индия';
 const country = prompt('Введите страну доставки!(Китай, Южная Америка, Австралия, Индия, Ямайка)','Индия');
-
+  let con = country.toLowerCase();
 let price;
 
-switch (country) {
+switch (con) {
   case "Китай":
     price = 100;
     break;
@@ -51,4 +51,4 @@ switch (country) {
     console.log('В вашей стране доставка не доступна');    
 }
 
-console.log(`Доставка в ${country} будет стоить ${price}`);
+console.log(`Доставка в ${con} будет стоить ${price}`);
