@@ -63,15 +63,14 @@
   Если закончились попытки, вывести alert с текстом "У вас закончились попытки, аккаунт заблокирован!"
   
   Если пользователь нажмет Cancel, прекратить выполнение цикла.
-*/
+  */
 
 const passwords = ["qwerty", "111qwe", "123123", "r4nd0mp4zzw0rd", "1"];
+console.log("password :", passwords);
 let attempts = 3;
 
 let i = 0;
 let pass;
-
-console.log("password :", passwords);
 
 do {
   pass = prompt("Enter password");
