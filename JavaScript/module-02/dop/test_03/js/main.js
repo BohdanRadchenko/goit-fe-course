@@ -1,16 +1,21 @@
 'user strict'
+//COMPLETED
 /*
-  Есть три переменные name, date и roomType, содержащие имя гостя, 
-  дату его прибытия на отдых и тип комнаты отеля.
-  
-  Создай переменную message и используя шаблонные строки запиши в нее сообщение формата:
-  "имя гостя" прибывает на отдых "дата прибытия" в "тип комнаты".
+* Напиши скрипт по автоматизации оплаты процесса гравировки украшений.
+* Гравировка одного слова стоит 10 кредитов.
 */
 
-const name = 'Mango';
-const date = '14/08/2137';
-const roomType = 'люкс';
+// В переменной message хранится произвольная строка
+const message = "Proin sociis natoque et magnis parturient montes mus";
+let price;
 
-const message = `${name} прибывает на отдых ${date} в ${roomType}`
+// Разбить строку в массив, разделитель - пробел, и записать в переменную words
+let words = message.split(' ');
+console.log(words);
 
-console.log(message); // Mango прибывает на отдых 14/08/2137 в люкс
+// Выведи в консоли длину массива words
+console.log(words.length); // 8
+
+// Вычисли сколько будет стоить гравировка и запиши результат в переменную price
+price = 10;
+console.log(price * words.length); // 80

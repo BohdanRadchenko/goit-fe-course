@@ -1,27 +1,39 @@
-'user strict'
+'use strict';
+
+//COMPLETED
+
 /*
-  Напиши скрипт который: 
- 
-  - Через prompt cпрашивает 'Введите произвольное целое число'
-  - Если пользователь нажал Cancel - показывать alert 'Ну и ладно, пока!'
-  - Если посетитель вводит целое число - показывать alert со строкой 'Спасибо!'
-  - Если посетитель вводит что либо другое — показывать alert 'Необходимо было ввести целое число!'
-*/ 
+  Напиши скрипт, который проверяет произвольную строку 
+  в переменной message и находит в ней самое длинное слово,
+  записывая его в переменную longestWord.
+*/
 
-const massageintegers = ('Целое число – это натуральные числа, число нуль, а также числа, противоположные натуральным.(...-1, 0, 1,...) Не дробное!!!');
+const message = "May the force be with you ";
+let longestWord;
+let n = 0;
 
-const whatIntegers = confirm('Вы хотите узнать, что такое ЦЕЛЫЕ числа?');
+// console.log(longestWord); // 'force'
 
-if (whatIntegers) {
-    alert(massageintegers);
+let messSplit = message.split(' ');
+console.log('message :', messSplit);
+
+for (let i = 0, max = messSplit.length; i < max; i++) {
+      if (messSplit[i].length > n) {
+        n = messSplit[i].length;
+        longestWord = messSplit[i]
+      }  
 }
 
-let userNumber = prompt('Введите произвольное ЦЕЛОЕ число');
+console.log('longestWord :', longestWord, ';' ,'symb:', n);
 
-if (userNumber === null) {
-    alert('Ну и ладно, пока!')
-} else if (Number.isNaN(Number(userNumber)) || !Number.isInteger(userNumber)) {
-    alert('Необходимо было ввести ЦЕЛОЕ число!');
-} else {
-    alert('Спасибо!')
-}
+
+
+// for .... of
+// for ( let i of messSplit)  {
+//   console.log('i :', i);
+//   if (i.length > idx) {
+//     idx = i.length;
+//     longestWord = i;
+//   }
+// }
+// console.log('longWord :', longestWord);

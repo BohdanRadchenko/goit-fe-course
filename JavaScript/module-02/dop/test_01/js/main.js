@@ -1,20 +1,39 @@
 'user strict'
 
+//COMPLETED
+
 /*
- * - Объяви две переменные хранящие информацию о товаре: name и price
- * - Присвой переменным следующие характеристики товара (сразу при объявлении)
- *   - название: Генератор защитного поля
- *   - цена: 1000
- * - Присвой товару новую цену - 2000
- * - Используя шаблонную строку выведи в консоли информацию о товаре, 
- *   получится "Выбран «Генератор защитного поля», цена за штуку 2000 кредитов"
- */
+* Есть массив имен пользователей
+* Используя методы массива, последовательно выполнить указанные операции
+*/
 
- const name = 'Генератор защитного поля';
- let price =  1000;
+const users = ["Mango", "Poly", "Ajax", "Chelsey"];
 
- console.log(price);
- 
- price = 2000;
+// // Удалить первый элемент массива
+users.shift();
+console.log(users); // ["Poly", "Ajax", "Chelsey"]
 
- console.log(`Выюрать ${name}, цена за штуку ${price} кредитов`);
+// // Удалить последний элемент массива
+users.pop();
+console.log(users); // ["Poly", "Ajax"]
+
+// // Добавить в начало массива пользователя "Lux"
+users.unshift('Lux');
+console.log(users); // ["Lux", "Poly", "Ajax"]
+
+// // Добавить в конец массива два пользователя ("Jay" и "Kiwi") за одну операцию
+users.push('Jay', 'Kiwi');
+console.log(users); //  ["Lux", "Poly", "Ajax", "Jay", "Kiwi"]
+
+// // Удалить из массива элемент хранящийся в переменной userToDelete
+const userToDelete = "Ajax";
+let index = users.indexOf(userToDelete);
+console.log('index:', index);
+users.splice(index, 1);
+console.log(users); //  ["Lux", "Poly", "Jay", "Kiwi"]
+
+// // Добавить в массив пользователя "Kong", перед пользователем хранящейся в переменной userToInsertBefore
+const userToInsertBefore = "Jay";
+index = users.indexOf(userToInsertBefore);
+users.splice(index, 0, 'Kong');
+console.log(users); //  ["Lux", "Poly", "Kong", "Jay", "Kiwi"]

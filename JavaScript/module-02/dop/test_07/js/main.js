@@ -1,17 +1,56 @@
-'user strict'
+"user strict";
 
-/* 
-  В переменную value записывается случайное число.
+//COMPLETED
+
+/*
+  Создай игру угадай число.
   
-  Объяви переменную type, в которую, используя ветвления запиши строку:  
-    - "even" если value четное
-    - "odd" если value не четное
+  Есть массив чисел numbers, содержащий "верные" числа.
+  Числа в массиве всегда идут по возрастанию,
+   1-5, 20-40, 2-100 и т.п.
+  
+  Просим пользователя ввести цифру от самого маленького,
+  до самого большого элемента массива. Эти значения необходимо
+  сохранить в переменные min и max. Учтите что массив произвольный,
+  но элементы всегда идут по возрастанию.
+  
+  Пусть prompt говорит "Введите цифру между x и y", где x и y 
+  соотвественно самый маленький и самый большой элемент массива.
+  
+  Предполагаем что пользователь вводит только числа, 
+  проверки на невалидный ввод не делать. 
 
-  PS: используй тернарный оператор
+  Проверить содержит ли в себе массив numbers введенное число.
+  
+    - Если содержит - выводим alert с сообщением 
+    'Поздравляем, Вы угадали!'.
+    - Есл не содержит - выводим alert с сообщением 
+    'Сожалеем, Вы не угадали!'.
 */
 
-const value = Number.parseInt(Math.random() * 100);
+const numbers = [12, 15, 25, 37, 41, 62, 74, 83];
 
-let type = value%2 === 0 ? 'even' : 'odd' ;
+let min = 0;
+let max = 0;
 
-console.log(`${value} is ${type}`);
+for (let i = 0, lg = numbers.length; i < lg; i++) {
+  //  console.log('counter :', i);
+  //  idx = numbers[i];
+  //  console.log('idx :', idx);
+
+  if (max < numbers[i]) {
+    max = numbers[i];
+  }
+}
+
+min = numbers[0];
+console.log("min :", min);
+console.log("max :", max);
+
+let userNumbers = Number(prompt(`Enter at ${min} of ${max} number`));
+
+console.log('userNumbers :', userNumbers);
+
+
+numbers.includes(userNumbers) ? alert('U rock!!!') : alert('Oh, u looose');
+
