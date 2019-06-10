@@ -28,7 +28,7 @@ class Notepad {
     };
 
     deleteNote(id) {
-        for (let i = 0; i < this._notes.length; i ++) {
+        for (let i = 0, max = this._notes.length; i < max; i += 1) {
             if (this._notes[i].id === id) {
                 this._notes.splice(i, 1);
                 return this;
@@ -37,7 +37,7 @@ class Notepad {
     };
 
     updateNoteContent(id, updatedContent) {
-        for (let i = 0; i < this._notes.length; i ++) {
+        for (let i = 0, max = this._notes.length; i < max; i += 1) {
             if (this._notes[i].id === id) {
                 this._notes[i] = {
                     ...this._notes[i],
@@ -49,7 +49,7 @@ class Notepad {
     };
 
     updateNotePriority(id, priority) {
-        for (let i = 0; i < this._notes.length; i ++) {
+        for (let i = 0, max = this._notes.length; i < max; i += 1) {
             if (this._notes[i].id === id) {
                 this._notes[i].priority = priority;
                 return this._notes[i];
@@ -59,7 +59,7 @@ class Notepad {
 
     filterNotesByQuery(query) {
         const queryArr = [];
-        for (let i = 0; i < this._notes.length; i ++) {
+        for (let i = 0, max = this._notes.length; i < max; i += 1) {
             const titleToLowerCase = this._notes[i].title.toLowerCase();
             const bodyToLowerCase = this._notes[i].body.toLowerCase();
             if (titleToLowerCase.includes(query) || bodyToLowerCase.includes(query)) {
@@ -72,7 +72,7 @@ class Notepad {
     filterNotesByPriority(priority) {
         const priorityArr = [];
 
-        for (let i = 0; i < this._notes.length; i ++) {
+        for (let i = 0, max = this._notes.length; i < max; i += 1) {
             if (this._notes[i].priority === priority) {
                 priorityArr.push(this._notes[i]);
             }
@@ -104,8 +104,14 @@ const initialNotes = [{
 
 const notepad = new Notepad(initialNotes);
 
+/*
+  Смотрю что у меня в заметках после инициализации
+*/
 console.log('Все текущие заметки: ', notepad.notes);
 
+/*
+ * Добавляю еще 2 заметки и смотрю что получилось
+ */
 notepad.saveNote({
     id: 'id-3',
     title: 'Get comfy with Frontend frameworks',
@@ -122,32 +128,47 @@ notepad.saveNote({
 
 console.log('Все текущие заметки: ', notepad.notes);
 
+/*
+ * Зима уже близко, пора поднять приоритет на покупку одежды
+ */
 notepad.updateNotePriority('id-4', Notepad.Priority.NORMAL);
 
 console.log('Заметки после обновления приоритета для id-4: ', notepad.notes);
 
+/*
+ * Решил что фреймворки отложу немного, понижаю приоритет
+ */
 notepad.updateNotePriority('id-3', Notepad.Priority.LOW);
 
 console.log('Заметки после обновления приоритета для id-3: ', notepad.notes);
 
-
+/*
+ * Решил отфильтровать заметки по слову html
+ */
 console.log(
     'Отфильтровали заметки по ключевому слову "html": ',
     notepad.filterNotesByQuery('html'),
 );
 
-
+/*
+ * Решил отфильтровать заметки по слову javascript
+ */
 console.log(
     'Отфильтровали заметки по ключевому слову "javascript": ',
     notepad.filterNotesByQuery('javascript'),
 );
 
+/*
+ * Хочу посмотреть только заметки с нормальным приоритетом
+ */
 console.log(
     'Отфильтровали заметки по нормальному приоритету: ',
     notepad.filterNotesByPriority(Notepad.Priority.NORMAL),
 );
 
-
+/*
+ * Обновим контент заметки с id-3
+ */
 notepad.updateNoteContent('id-3', {
     title: 'Get comfy with React.js or Vue.js',
 });
@@ -157,5 +178,8 @@ console.log(
     notepad.notes,
 );
 
+/*
+ * Повторил HTML и CSS, удаляю запись c id-2
+ */
 notepad.deleteNote('id-2');
 console.log('Заметки после удаления с id -2: ', notepad.notes);
