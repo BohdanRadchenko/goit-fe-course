@@ -67,9 +67,8 @@ class Notepad {
         this._notes.push(newItem);
         return newItem;
     }
-
-    filterListItems(query = '') {
-        return this._notes.filter(item => item.body.toLowerCase().includes(query.toLowerCase()) || item.title.toLowerCase().includes(query.toLowerCase()));
+        filterListItems(query = '') {
+        return this._notes = this._notes.filter(item => item.body.toLowerCase().includes(query.toLowerCase()) || item.title.toLowerCase().includes(query.toLowerCase()));
     }
 
     removeListItem(id) {
@@ -129,11 +128,11 @@ function createActionIcon(text) {
     return newElement;
 }
 
-
-
 //RENDER FUNCTION
 const renderNoteList = (listRef, notes) => {
     const list = notes.map(el => createListItem(el));
+    
+    listRef.innerHTML = '';
     listRef.append(...list);
 
     return listRef;
@@ -151,7 +150,6 @@ function createListItem(note) {
     divNote.append(createNoteContent(note));
     divNote.append(createNoteFooter(note.priority));
 
-    console.log('noteLi :', noteLi);
     return noteLi;
 }
 
@@ -226,7 +224,8 @@ refs.form.addEventListener('submit', handleSubmit);
 
 function handleFilterChange(event) {
     const filteredItems = notepad.filterListItems(event.target.value);
-
+    console.log(filteredItems);
+    
     renderNoteList(refs.noteList, filteredItems);
 }
 

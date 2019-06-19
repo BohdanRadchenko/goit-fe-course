@@ -21,7 +21,7 @@ const NOTE_ACTIONS = {
 };
 
 const initialNotes = [{
-        id: 'id-1',
+        id: 'id-1', 
         title: 'JavaScript essentials',
         body: 'Get comfortable with all basic JavaScript concepts: variables, loops, arrays, branching, objects, functions, scopes, prototypes etc',
         priority: PRIORITY_TYPES.HIGH,
@@ -88,7 +88,6 @@ function createActionIcon(text) {
 }
 
 const noteList = document.querySelector('.note-list');
-
 
 const renderNoteList = (listRef, notes) => {
     const list = notes.map(el => createListItem(el));

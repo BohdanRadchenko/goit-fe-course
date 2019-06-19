@@ -207,7 +207,7 @@ span {
 }*/
 
 /* ==============task07============== */
-/*body {
+body {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -235,8 +235,7 @@ span {
 
 .input.invalid {
   outline: 3px solid #F44336;
-}*/
-
+}
 
 /* ==============task08============== */
 /* {

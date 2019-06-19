@@ -78,15 +78,15 @@ const notepad = {
       }
     }
     /*
-    * Обновляет приоритет заметки
-    *
-    * Принимает: идентификатор заметки и ее новый приоритет
-    * Возвращает: обновленную заметку
-    */
+     * Обновляет приоритет заметки
+     *
+     * Принимает: идентификатор заметки и ее новый приоритет
+     * Возвращает: обновленную заметку
+     */
   },
   filterNotesByQuery(query) {
     const newArr = [];
-    for (let i = 0; i < this.notes.length; i++ ) {
+    for (let i = 0; i < this.notes.length; i++) {
       const titleToLowerCase = this.notes[i].title.toLowerCase();
       const bodyToLowerCase = this.notes[i].body.toLowerCase();
       if (titleToLowerCase.includes(query) || bodyToLowerCase.includes(query)) {
@@ -105,7 +105,7 @@ const notepad = {
   },
   filterNotesByPriority(priority) {
     const priorityArr = [];
-    for (let i = 0; i < this.notes.length; i++ ) {
+    for (let i = 0; i < this.notes.length; i++) {
       if (this.notes[i].priority === priority) {
         priorityArr.push(this.notes[i]);
       }
@@ -127,29 +127,25 @@ const notepad = {
 notepad.saveNote({
   id: 'id-1',
   title: 'JavaScript essentials',
-  body:
-    'Get comfortable with all basic JavaScript concepts: variables, loops, arrays, branching, objects, functions, scopes, prototypes etc',
+  body: 'Get comfortable with all basic JavaScript concepts: variables, loops, arrays, branching, objects, functions, scopes, prototypes etc',
   priority: Priority.HIGH,
 });
 notepad.saveNote({
   id: 'id-2',
   title: 'Refresh HTML and CSS',
-  body:
-    'Need to refresh HTML and CSS concepts, after learning some JavaScript. Maybe get to know CSS Grid and PostCSS, they seem to be trending.',
+  body: 'Need to refresh HTML and CSS concepts, after learning some JavaScript. Maybe get to know CSS Grid and PostCSS, they seem to be trending.',
   priority: Priority.NORMAL,
 });
 notepad.saveNote({
   id: 'id-3',
   title: 'Get comfy with Frontend frameworks',
-  body:
-    'First must get some general knowledge about frameworks, then maybe try each one for a week or so. Need to choose between React, Vue and Angular, by reading articles and watching videos.',
+  body: 'First must get some general knowledge about frameworks, then maybe try each one for a week or so. Need to choose between React, Vue and Angular, by reading articles and watching videos.',
   priority: Priority.NORMAL,
 });
 notepad.saveNote({
   id: 'id-4',
   title: 'Winter clothes',
-  body:
-    "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
+  body: "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
   priority: Priority.LOW,
 });
 
@@ -210,3 +206,4 @@ console.log(
  */
 notepad.deleteNote('id-2');
 console.log('Заметки после удаления с id -2: ', notepad.getNotes());
+

@@ -138,35 +138,34 @@
 - Если введено подходящее количество, то outline инпута становится зеленым, 
 если неправильное - красным. Для добавления стилей, на вкладке CSS есть стили valid и invalid
 */
-// const list = document.querySelector('.input-list');
-// // console.log('list :', list);
+const list = document.querySelector('.input-list');
+// console.log('list :', list);
+const inputOne = document.querySelector('input[data-length="2"]');
+// console.log('inputOne :', inputOne);
+const inputTwo = document.querySelector('input[data-length="4"]');
+// console.log('inputTwo :', inputTwo);
+const inputThree = document.querySelector('input[data-length="8"]');
+// console.log('inputThree :', inputThree);
+const inputFour = document.querySelector('input[data-length="16"]');
+// console.log('inputFour :', inputFour);
 
-// const inputOne = document.querySelector('input[data-length="2"]');
-// // console.log('inputOne :', inputOne);
-// const inputTwo = document.querySelector('input[data-length="4"]');
-// // console.log('inputTwo :', inputTwo);
-// const inputThree = document.querySelector('input[data-length="8"]');
-// // console.log('inputThree :', inputThree);
-// const inputFour = document.querySelector('input[data-length="16"]');
-// // console.log('inputFour :', inputFour);
+function listener(input) {
+  input.addEventListener('blur', inputFocus);
 
-// function listener(input) {
-//   input.addEventListener('blur', inputFocus);
+  function inputFocus(event) {
+    if (input.value.length === Number(input.dataset.length)) {
+      input.classList.add('valid')
+      input.classList.remove('invalid')
+    } else {
+      input.classList.add('invalid');
+    }
+  }
+}
 
-//   function inputFocus(event) {
-//     if (input.value.length === Number(input.dataset.length)) {
-//       input.classList.add('valid')
-//       // input.classList.remove('invalid')
-//     } else {
-//       input.classList.add('invalid');
-//     }
-//   }
-// }
-
-// listener(inputOne);
-// listener(inputTwo);
-// listener(inputThree);
-// listener(inputFour);
+listener(inputOne);
+listener(inputTwo);
+listener(inputThree);
+listener(inputFour);
 
 //============task08===========
 /*
