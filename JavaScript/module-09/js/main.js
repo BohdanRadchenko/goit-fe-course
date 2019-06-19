@@ -67,8 +67,8 @@ class Notepad {
         this._notes.push(newItem);
         return newItem;
     }
-        filterListItems(query = '') {
-        return this._notes = this._notes.filter(item => item.body.toLowerCase().includes(query.toLowerCase()) || item.title.toLowerCase().includes(query.toLowerCase()));
+    filterListItems(query = '') {
+        return this._notes.filter(item => item.body.toLowerCase().includes(query.toLowerCase()) || item.title.toLowerCase().includes(query.toLowerCase()));
     }
 
     removeListItem(id) {
@@ -130,9 +130,11 @@ function createActionIcon(text) {
 
 //RENDER FUNCTION
 const renderNoteList = (listRef, notes) => {
+
     const list = notes.map(el => createListItem(el));
-    
+
     listRef.innerHTML = '';
+
     listRef.append(...list);
 
     return listRef;
@@ -201,34 +203,44 @@ function createNoteFooter(priority) {
     return noteFooter;
 }
 
-function addListItem(listRef, note) {
-    const listItem = createListItem(note)
-    listRef.appendChild(listItem)
-}
 
+//
 function handleSubmit(event) {
     event.preventDefault();
     const [title, body] = event.target.elements;
     if (title.value.trim().length === 0 || body.value.trim().length === 0) {
-        return alert('Необходимо заполнить все поля!');
+        return alert('Необходимо заполнить ВСЕ поля!');
     }
     const obj = {
         title: title.value,
         body: body.value,
     }
     const saveItem = notepad.saveListItem(obj);
-    addListItem(refs.noteList, saveItem)
+    
+    addListItem(refs.noteList, saveItem);
+    
+    event.currentTarget.reset();
+}
+
+//
+function addListItem(listRef, note) {
+    const listItem = createListItem(note)
+    listRef.appendChild(listItem)
 }
 
 refs.form.addEventListener('submit', handleSubmit);
 
+//
 function handleFilterChange(event) {
-    const filteredItems = notepad.filterListItems(event.target.value);
-    console.log(filteredItems);
-    
-    renderNoteList(refs.noteList, filteredItems);
+    const filtred = notepad.filterListItems(event.target.value);
+    console.log(filtred);
+
+    renderNoteList(refs.noteList, filtred);
 }
 
+refs.filter.addEventListener('input', handleFilterChange);
+
+//
 function handleListClick(event) {
     if (event.target.nodeName !== 'I') return;
 
@@ -242,6 +254,4 @@ function handleListClick(event) {
     }
 }
 
-
-refs.filter.addEventListener('input', handleFilterChange);
 refs.noteList.addEventListener('click', handleListClick);
