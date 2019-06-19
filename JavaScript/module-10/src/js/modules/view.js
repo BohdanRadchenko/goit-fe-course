@@ -40,6 +40,9 @@ function createActionIcon(text) {
 
 export const renderNoteList = (listRef, notes) => {
     const list = notes.map(el => createListItem(el));
+    
+    listRef.innerHTML = '';
+    
     listRef.append(...list);
 
     return listRef;
