@@ -25,6 +25,8 @@ function handleSubmit(event) {
     }
     const saveItem = notepad.saveListItem(obj);
     addListItem(refs.noteList, saveItem)
+    
+    event.currentTarget.reset();
 }
 
 refs.form.addEventListener('submit', handleSubmit);
@@ -52,4 +54,6 @@ renderNoteList(refs.noteList, notepad.notes);
 
 
 refs.filter.addEventListener('input', handleFilterChange);
+
+
 refs.noteList.addEventListener('click', handleListClick);
