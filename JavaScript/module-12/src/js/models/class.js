@@ -1,3 +1,5 @@
+'use strict';
+
 import {
     load,
     save

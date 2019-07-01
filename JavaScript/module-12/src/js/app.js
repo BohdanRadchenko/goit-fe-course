@@ -1,3 +1,5 @@
+'use strict';
+
 import 'notyf/notyf.min.css';
 import MicroModal from 'micromodal';
 
@@ -24,12 +26,7 @@ import {
 } from './models/localStorage';
 import noteTemplate from '../templates/note.hbs';
 
-
-// class expample
-
 const notes = localNotes ? new Notes(localNotes) : new Notes(initialNotes);
-
-// handlers
 
 const handleModal = () => {
     MicroModal.show('note-editor-modal');
@@ -76,7 +73,6 @@ const handleListClick = (event) => {
     const parentItem = event.target.closest('li');
     const id = parentItem.dataset.id;
     notyf.success(NOTIFICATION_MESSAGES.NOTE_DELETED_SUCCESS);
-    // parentItem.remove();
     setTimeout(() => parentItem.remove(), 200);
     notes.removeNote(id).then(notesAfterDelete => console.log(notesAfterDelete));
 }
@@ -85,8 +81,6 @@ const handleInputRemember = (event) => {
     save('titleInput', refs.inputTitle.value);
     save('bodyInput', refs.inputBody.value);
 }
-
-// listeners
 
 refs.searchInput.addEventListener('input', handleNotesFilter);
 refs.noteList.addEventListener('click', handleListClick);

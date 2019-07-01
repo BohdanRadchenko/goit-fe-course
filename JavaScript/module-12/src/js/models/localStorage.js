@@ -1,3 +1,5 @@
+'use strict';
+
 import {
     refs
 } from '../utils/constants';
@@ -6,13 +8,12 @@ import {
 } from './view';
 
 
-export const load = key => {
+export const load = (key) => {
     try {
         const serializedState = localStorage.getItem(key);
-
         return serializedState === null ? null : JSON.parse(serializedState);
-    } catch (err) {
-        console.error('Get state error: ', err);
+    } catch (error) {
+        console.error('error: ', error);
     }
 };
 
@@ -20,8 +21,8 @@ export const save = (key, value) => {
     try {
         const serializedState = JSON.stringify(value);
         localStorage.setItem(key, serializedState);
-    } catch (err) {
-        console.error('Set state error: ', err);
+    } catch (error) {
+        console.error('error: ', error);
     }
 };
 
@@ -30,8 +31,8 @@ export const remove = (key) => {
         const serializedState = localStorage.removeItem(key);
 
         return serializedState;
-    } catch (err) {
-        console.error('Get state error: ', err);
+    } catch (error) {
+        console.error('error: ', error);
     }
 }
 
