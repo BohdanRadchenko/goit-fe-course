@@ -1,3 +1,5 @@
+'use strict';
+
 export default class Notes {
     constructor(notes = []) {
         this._notes = notes;

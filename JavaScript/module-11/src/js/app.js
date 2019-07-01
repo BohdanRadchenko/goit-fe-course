@@ -1,3 +1,4 @@
+'use strict';
 import 'notyf/notyf.min.css';
 import MicroModal from 'micromodal';
 
