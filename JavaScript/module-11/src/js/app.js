@@ -17,11 +17,7 @@ import {
 
 import Notes from './models/class';
 
-// class example
-
 const notes = new Notes(initialNotes);
-
-// handlers
 
 const handleModal = (event) => {
     MicroModal.show('note-editor-modal');
@@ -44,7 +40,6 @@ const handleFormSubmit = (event) => {
         priority: PRIORITY_TYPES.LOW
     }
 
-
     notyf.success(NOTIFICATION_MESSAGES.NOTE_ADDED_SUCCESS);
     notes.saveListItem(newItem);
     refs.noteList.insertAdjacentHTML('beforeend', createNote(newItem));
@@ -66,8 +61,6 @@ const handleListClick = (event) => {
     parentItem.remove();
     notes.removeNote(id);
 }
-
-// listeners
 
 refs.searchInput.addEventListener('input', handleNotesFilter);
 refs.noteList.addEventListener('click', handleListClick);
