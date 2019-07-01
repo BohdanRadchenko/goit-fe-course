@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --env.mode development --env.port 8080",
     "build": "webpack --env.mode production",
-    "startJson": "json-server --watch ./src/server/db.json"
+    "server": "json-server --watch ./src/server/db.json"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
