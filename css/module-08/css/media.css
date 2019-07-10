@@ -1,0 +1,145 @@
+* {
+    /*outline: 1px solid red;*/
+}
+
+@media (max-width: 659px) {  
+    .container {
+        width: 320px;
+    }
+
+    .headline {
+        padding-top: 32px;
+        padding-bottom: 138px;
+    }
+    
+    .menu {
+        justify-content: center;   
+        margin-bottom: 126px;
+    }
+
+    .site_logo {
+        text-align: center;
+        margin-bottom: 58px;
+    }
+
+    .site_title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .site_subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .find_button {
+        width: 280px;
+    }
+
+    /*section*/
+    .section_parthners {
+        padding-top: 66px;
+        padding-bottom: 56px;
+    }
+
+    .section_title {
+        margin-bottom: 20px;
+    }
+
+    .parthner_list {
+        width: 266px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }  
+
+    .other_parthners {
+        width: 280px;
+    }
+}
+
+
+@media (min-width: 660px) and (max-width: 941px) {
+    .container {
+        width: 660px;        
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    .site_title {
+        margin-bottom: 40px;
+    }
+    
+    .site_subtitle {
+        margin-bottom: 34px;
+    }
+
+    .section_parthners {
+        padding-bottom: 40px;
+    }
+
+    .parthner {
+        width: 492px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .parthner_list {
+        width: 236px;
+    }
+
+    .parthner_list:nth-child(odd) {
+        margin-right: 20px;
+    }
+
+    .parthner_list:not(:nth-last-child(-n +2)) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 942px) {
+    .section_parthners {
+        padding-bottom: 72px;
+    }
+
+    .container {
+        width: 940px;        
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-bottom: 150px;
+    }
+
+    .site_title {
+        margin-bottom: 40px;
+    }
+    
+    .site_subtitle {
+        margin-bottom: 38px;
+    }
+
+    .parthner {     
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parthner_list {
+        width: 220px;
+    }
+    .parthner_list:not(:nth-child(4n)) {
+       margin-right: 20px;
+    }
+    .other_parthners {
+        margin-top: 48px;
+    }
+}
+

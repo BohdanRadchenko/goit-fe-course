@@ -1,0 +1,125 @@
+*{
+    /*outline: 1px solid red;*/
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:'playfair display', serif;
+    color: #626262;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.headline {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+.menu {
+ }
+
+.site_menu {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.site_menu li {
+    font-size: 14px;
+    display: inline-block;
+}
+
+/*.site_menu li:not(:last-child) {
+    margin-right: 120px;
+}*/
+
+.site_menu a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0 60px; /* for UX*/
+}
+
+.site_menu a:hover,
+.site_menu a:focus {
+    color: #25b4f5;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*main*/
+
+.cont {
+    padding-bottom: 70px;
+    font-size: 0;
+}
+
+.content {
+    margin-bottom: 138px;
+    display: inline-block; 
+    width: 420px;
+    margin-right: 60px;
+}
+
+.content:nth-child(even) {
+    margin-right: 0;
+}
+
+.content:nth-last-child(-n +3) {
+    margin-bottom: 52px;
+}
+
+.photo {
+    margin-bottom: 30px;
+}
+
+/*fonts*/
+
+.subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'ubuntu';
+}
+
+h2 {
+    margin: 0 0 26px 0;
+    font-size: 30px;
+}
+
+.text   {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*button*/
+
+.btn_more {
+    font-size: 14px;
+    padding: 18px 0;
+    width: 164px;
+    display: block;
+    margin: 0 auto;
+}
